@@ -5,7 +5,7 @@ import { ImagesSlider } from "@/components/ui/slider";
 import Link from "next/link";
 
 export default function ImagesSliderDemo() {
-  const images = [
+  let images = [
     "/blog.avif",
     "/nxt.jpg",
     "/flower.jpg",

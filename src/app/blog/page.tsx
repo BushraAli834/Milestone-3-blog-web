@@ -36,7 +36,7 @@ interface I {
 }
 
 export default async function Page() {
-  let data: I[] = await client.fetch(`*[_type == 'blog']`);
+  const data: I[] = await client.fetch(`*[_type == 'blog']`);
   console.log(data);
 
   return (
