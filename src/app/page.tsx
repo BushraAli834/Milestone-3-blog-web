@@ -6,9 +6,9 @@ import Contact from "@/components/Contact/page"
 import Footer from "@/components/Footer/page"
 export default function page() {
   return (
-    <div className='bg-black min-h-max w-screen'>
+    <div >
       
-      <Slide text={'Blogs'}/>
+      <Slide/>
       <Contact/>
       <Footer/>
 
