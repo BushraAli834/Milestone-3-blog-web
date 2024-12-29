@@ -26,7 +26,6 @@
 //   )
 // }
 import { client } from '@/sanity/lib/client';
-import { div } from 'framer-motion/client';
 import React from 'react';
 import Comment from "@/app/Comment/page"
 
@@ -40,12 +39,12 @@ export default async function Page() {
   console.log(data);
 
   return (
-    <div className='bg-gradient-to-r from-purple-500 to-pink-800 '>
+    <div className='bg-gradient-to-r from-black to-teal-600 '>
        <div className="flex flex-col items-center px-4 py-6 space-y-6">
       {data.map((item, index) => (
         <div
           key={index}
-          className="max-w-md w-full bg-white shadow-lg rounded-lg p-6 border border-black shadow-red-500 hover:scale-105 transition duration-300 ease-in-out"
+          className="max-w-md w-full bg-white shadow-lg rounded-lg p-6 border border-black shadow-black hover:scale-105 transition duration-300 ease-in-out"
         >
           <h2 className="text-xl font-serif text-gray-800 mb-2 text-center justify-center ">{item.name}</h2>
           <p className="text-gray-600 font-serif">{item.body}</p>
